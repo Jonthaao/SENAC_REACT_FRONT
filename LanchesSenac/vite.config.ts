@@ -5,12 +5,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': {
+      '/api/v3/pix/qrCodes': {
         target: 'https://sandbox.asaas.com',
         changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, '/api/v3/pix/qrCodes/static'),
+        secure: true,
+        rewrite: (path) => path.replace(/^\/api\/v3\/pix\/qrCodes/, '/api/v3/pix/qrCodes'),
       },
+    }
     },
-  },
-});
+  });

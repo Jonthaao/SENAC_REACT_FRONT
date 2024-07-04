@@ -5,9 +5,8 @@ const QRCodePage = () => {
       <>
         <QRCodeImage value_= {80} 
           format= 'IMAGE' 
-          expirationSeconds= {3600} 
-          allowMultiplePayments= {false}
-          description='Pagamentos de lanches' />
+          expirationSeconds= {3600}
+          />
       </>
     );
   };
