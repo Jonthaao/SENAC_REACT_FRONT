@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { QRPixCode } from "../../services/ClienteAsaas";
 import { RequestQRCode } from "../../interfaces/RequestQRCode";
 import React from "react";
+import { Button } from "react-bootstrap";
+import "./QRCode.css"
 
 const QRCodeImage: React.FC<RequestQRCode> = ({value_, format, expirationSeconds}) => {
   const [qrCodeData, setQRCodeData] = useState<any | null>(null);
@@ -40,9 +42,10 @@ const requestData: RequestQRCode = {
  
   return (
     <>
-      <div>
-      <h1>Display Base64 Image</h1>
+      <div className="conteiner">
+      <h1>Código QRCode para pagamento via pix</h1>
       <img src={qrCodeImageDecoded} alt="Base64 Image" />
+      <Button type="button" className="btn-pag">Finalizar Pedido</Button>
     </div>
     </>
   );

@@ -1,0 +1,28 @@
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.conteiner h1 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.conteiner img {
+  margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.btn-pag {
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor para indicar que o elemento é clicável */
+}
+
+.btn-pag:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}

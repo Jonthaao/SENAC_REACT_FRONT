@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import QRCodePage from "./Pages/QRCodePixTest/QRCodePixTest";
+import Pagamento from "./Pages/CheckOut/Checkout";
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/admin" />
         <Route path="/pix" element={<QRCodePage/>}/>
+        <Route path = "/checkout" element={<Pagamento/>}/>
       </Routes> 
     </Router>
   );

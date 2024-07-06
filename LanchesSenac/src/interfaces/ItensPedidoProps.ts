@@ -3,4 +3,5 @@ export interface ItensPedidoProps {
     image: string;
     price: string;
     total: number;
+    qtd: number;
 }
